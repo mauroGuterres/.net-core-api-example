@@ -18,7 +18,7 @@ namespace poc.DAL
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
-               builder.Entity<Funcionario>().HasKey(m => m.Id);
+               builder.Entity<Funcionario>().HasKey(m => m.Id);               
                base.OnModelCreating(builder);
         }
 

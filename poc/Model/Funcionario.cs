@@ -1,5 +1,7 @@
 
 
+using System;
+
 namespace poc.Model{
 
     public class Funcionario{
@@ -8,10 +10,13 @@ namespace poc.Model{
         public string Telefone { get; set; }
         public string Endereco { get; set; } 
 
-    public Funcionario(string Nome, string Telefone, string Endereco){
+        public DateTime DataContratacao {get;set;}
+
+    public Funcionario(string Nome, string Telefone, string Endereco, DateTime DataContratacao){
         this.Endereco = Endereco;
         this.Nome = Nome;
         this.Telefone = Telefone;
+        this.DataContratacao = DataContratacao;
     }
 
     }
