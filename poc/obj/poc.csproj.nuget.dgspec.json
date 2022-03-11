@@ -1,29 +1,29 @@
 {
   "format": 1,
   "restore": {
-    "D:\\lab\\poc\\poc.csproj": {}
+    "D:\\git\\.net-core-api-example\\poc\\poc.csproj": {}
   },
   "projects": {
-    "D:\\lab\\poc\\poc.csproj": {
+    "D:\\git\\.net-core-api-example\\poc\\poc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\lab\\poc\\poc.csproj",
+        "projectUniqueName": "D:\\git\\.net-core-api-example\\poc\\poc.csproj",
         "projectName": "poc",
-        "projectPath": "D:\\lab\\poc\\poc.csproj",
+        "projectPath": "D:\\git\\.net-core-api-example\\poc\\poc.csproj",
         "packagesPath": "C:\\Users\\Mauro\\.nuget\\packages\\",
-        "outputPath": "D:\\lab\\poc\\obj\\",
+        "outputPath": "D:\\git\\.net-core-api-example\\poc\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Mauro\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Mauro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pesquisaeinovacao.sondait.com.br/I9.Nuget.Server/nuget/": {}
         },
         "frameworks": {
           "net5.0": {
@@ -55,6 +55,10 @@
               "target": "Package",
               "version": "[5.0.3, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
@@ -78,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -12,6 +12,10 @@ namespace poc.Model{
 
         public DateTime DataContratacao {get;set;}
 
+        public Funcionario() {
+        
+        }
+
     public Funcionario(string Nome, string Telefone, string Endereco, DateTime DataContratacao){
         this.Endereco = Endereco;
         this.Nome = Nome;

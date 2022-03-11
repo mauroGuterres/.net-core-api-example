@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 using poc.BLL;
 using poc.DAL;
 using poc.Model;
@@ -36,6 +37,18 @@ namespace poc.Controllers
         [Route("create")]
         public string create([FromBody]Funcionario funcionario){
              return service.create(funcionario) ? "Inserido com sucesso" : "Deu ruim aí tio";
+        }
+
+        [HttpGet]
+        [Route("get/{id}")]
+        public string get([FromRoute]int id){
+             return JsonConvert.SerializeObject(service.getById(id));
+        }
+
+        [HttpGet]
+        [Route("get")]
+        public string get() {
+            return JsonConvert.SerializeObject(service.getAll());
         }
     }
 }
